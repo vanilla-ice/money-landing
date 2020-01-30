@@ -1,2 +1,91 @@
 body {
-  background: #ddd; }
+  background: #ddd; 
+}
+*{
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  display: flex;
+  list-style: none;
+}
+
+/* HEADER */
+
+header {
+  
+  background: hsl(0, 0%, 100%);
+  padding: 20px;
+
+ 
+
+}
+.header__container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+.header__container a {
+  
+  font-family: HelveticaNeue;
+  margin-right:50px;
+  font-size: 24px;
+  line-height: 28px;
+  color: black;
+ 
+}
+.header__container a:after {
+  content: "";
+  display: block;
+  display:none;
+  opacity: 0.8;
+  
+  
+}
+.header__container a:hover {
+  border-bottom:5px solid #F8D552;
+}
+.header__container a:hover:after {
+  display:block;
+  
+  
+  
+}
+.header__container h1 {
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.header__container h2 {
+  font-style:normal;
+  margin: 0 auto;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  background: #1D1D85;    ;
+  padding: 5px 10px;
+}
+#menu-checkbox {
+  display: none;
+}
+ul {
+  display: flex;
+
+}
+nav {
+  margin-top: 60px;
+}
+
+.main-menu {
+  display:flex;
+}
+.left {
+  display:flex;
+}
