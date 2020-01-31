@@ -166,7 +166,7 @@ nav {
 
 .section__footer {
   display: grid;
-  grid-template-columns: 481px 481px 311px; }
+  grid-template-columns: 481px 481px 250px; }
 
 .section__green {
   background: #64BAAA;
