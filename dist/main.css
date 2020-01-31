@@ -138,24 +138,31 @@ nav {
 .button {
   display: flex;
   flex-direction: column;
+  flex: 1 1 1 1;
+  margin-right: 10px;
   background: #F8D552;
   border-radius: 8px;
+  padding: 17px 0px;
   max-width: 396px;
   max-height: 295px;
   z-index: 6; }
 
 .button2 {
   padding-top: 10px;
-  margin: 0 auto;
+  margin-left: 250px;
   z-index: 6; }
 
 .button__start {
-  align-items: center;
+  /*border: 2px solid #ffffff;
+  background: #F2F2F2;
+  border-radius: 8px;*/
+  width: 240px;
+  height: 40px;
+  box-shadow: 0 0 0 10px #ffffff;
   background: #ffffff;
   border-radius: 8px; }
 
 .button__start p {
-  padding: 11px 60px;
   font-size: 18px;
   text-align: center; }
 
@@ -166,7 +173,7 @@ nav {
 
 .section__footer {
   display: grid;
-  grid-template-columns: 481px 481px 250px; }
+  grid-template-columns: 451px 511px 235px; }
 
 .section__green {
   background: #64BAAA;

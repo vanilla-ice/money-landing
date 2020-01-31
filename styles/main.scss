@@ -162,9 +162,11 @@ nav {
 .button {
   display: flex;
   flex-direction: column;
-  
+  flex: 1 1 1 1 ;
+  margin-right: 10px;
   background: #F8D552;
   border-radius: 8px;
+  padding: 17px 0px;
   max-width: 396px;
   max-height: 295px;
   z-index: 6;
@@ -175,19 +177,23 @@ nav {
 .button2 {
   padding-top:10px;
   
-  margin: 0 auto;
+  margin-left: 250px;
   z-index:6;
 }
 .button__start {
-  align-items: center;
-  background: #f3f;
-  border-radius: 8px;
+  /*border: 2px solid #ffffff;
+  background: #F2F2F2;
+  border-radius: 8px;*/
   
+  width: 240px;
+  height: 40px;
+  box-shadow: 0 0 0 10px #ffffff;
+  background: #ffffff;
+  border-radius: 8px;
   
   
 }
 .button__start p{
-  padding: 11px 60px;
   font-size: 18px;
   text-align: center;
 
@@ -201,7 +207,7 @@ nav {
 }
 .section__footer {
   display: grid;
-  grid-template-columns: 481px 481px 311px;
+  grid-template-columns: 451px 511px 235px;
 }
 .section__green {
   background: #64BAAA;
@@ -250,7 +256,26 @@ nav {
 
 .section__yellow {
   background: #F8D552;
+  flex-direction: row;
+
 }
+.yellow__container {
+ display: flex;
+ 
+}
+.yellow__1 {
+ width:35%;
+}
+.yellow__1 h1 {
+  font-size: 70px;
+}
+.yellow__1 p{
+  font-size:50px;
+}
+.yellow__2 {
+  width:35%;
+}
+.
 .section__white {
   background: #ffffff;
 }
