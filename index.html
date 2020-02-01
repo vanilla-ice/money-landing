@@ -42,7 +42,11 @@
 </header>
 
 <div class="slider">
-  <div class="slider__container">
+  <div class="slider__backgroundWrapper">
+    <div class="slider__bgLeft"></div>
+    <div class="slider__bgRight"></div>
+  </div>
+  <div class="slider__container container">
     <div class="slider__left">
       <div class="slider__title">
         <h3>01/<span class='grey'>06</span></h3>
@@ -50,34 +54,37 @@
         <h4>Your progress bar</h4>
       </div>
       <div class="slider__suptitle">The Finance Company.</div>
-      <div class="slider__text">Your credit score for free.<br><br>
-          <p>The Finance Company</p>
+      <div class="slider__text">
+         <div>Your credit score for free.</div>
+
+          The Finance Company
         
-          <p>deliviry personalized insihts</p>
+          deliviry personalized insihts
         
-          <p>And updates your info weekly</p>
+          And updates your info weekly
         
-          <p>So your can see your progress</p>
+          So your can see your progress
 
       </div>
-      <div class="slider__icon"><svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g filter="url(#filter0_d)">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M54 100C81.6142 100 104 77.6142 104 50C104 22.3858 81.6142 0 54 0C26.3858 0 4 22.3858 4 50C4 77.6142 26.3858 100 54 100Z" fill="#D5D5D5" fill-opacity="0.499863"/>
-        </g>
-        <path d="M38.5254 49.433L66.9495 25.4415C67.6468 24.8528 68.7796 24.8528 69.477 25.4415C70.1743 26.0301 70.1743 26.9862 69.477 27.5748L42.3151 50.4983L69.477 73.4245C70.1743 74.0131 70.1743 74.9693 69.477 75.5579C69.1267 75.8535 68.6724 76 68.2148 76C67.7573 76 67.2997 75.8535 66.9526 75.5579L38.5254 51.5637C37.8249 50.9751 37.8249 50.0216 38.5254 49.433Z" fill="black"/>
-        <defs>
-        <filter id="filter0_d" x="0" y="0" width="108" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
-        <feOffset dy="4"/>
-        <feGaussianBlur stdDeviation="2"/>
-        <feColorMatrix type="matrix" values="0 0 0 0 0.641304 0 0 0 0 0.641304 0 0 0 0 0.641304 0 0 0 0.34233 0"/>
-        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
-        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
-        </filter>
-        </defs>
+      <div class="slider__icon">
+        <svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_d)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M54 100C81.6142 100 104 77.6142 104 50C104 22.3858 81.6142 0 54 0C26.3858 0 4 22.3858 4 50C4 77.6142 26.3858 100 54 100Z" fill="#D5D5D5" fill-opacity="0.499863"/>
+          </g>
+          <path d="M38.5254 49.433L66.9495 25.4415C67.6468 24.8528 68.7796 24.8528 69.477 25.4415C70.1743 26.0301 70.1743 26.9862 69.477 27.5748L42.3151 50.4983L69.477 73.4245C70.1743 74.0131 70.1743 74.9693 69.477 75.5579C69.1267 75.8535 68.6724 76 68.2148 76C67.7573 76 67.2997 75.8535 66.9526 75.5579L38.5254 51.5637C37.8249 50.9751 37.8249 50.0216 38.5254 49.433Z" fill="black"/>
+          <defs>
+          <filter id="filter0_d" x="0" y="0" width="108" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+          <feOffset dy="4"/>
+          <feGaussianBlur stdDeviation="2"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0.641304 0 0 0 0 0.641304 0 0 0 0 0.641304 0 0 0 0.34233 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+          </filter>
+          </defs>
         </svg>
-        </div>
+      </div>
     </div>
 
 
@@ -122,19 +129,21 @@
         </div>
       </div>
       
-    </divcla>
+    </div>
   </div>
 </div>
+</div>
+
 <div class="section__footer">
   <div class="section__green">
     <div class="card1">
       <div class="top__card">
         <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.104 38.625C29.5974 38.625 38.104 30.1128 38.104 19.6125C38.104 9.11219 29.5974 0.600006 19.104 0.600006C8.61059 0.600006 0.104004 9.11219 0.104004 19.6125C0.104004 30.1128 8.61059 38.625 19.104 38.625Z" fill="#E8DFEC"/>
-        <path d="M22.2469 26.925V25.4773C22.2469 23.8782 20.8877 22.5818 19.2111 22.5818H13.1397C11.4631 22.5818 10.104 23.8782 10.104 25.4773V26.925" stroke="#5E227F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1754 19.4795C17.8519 19.4795 19.2111 18.0906 19.2111 16.3773C19.2111 14.6639 17.8519 13.275 16.1754 13.275C14.4988 13.275 13.1396 14.6639 13.1396 16.3773C13.1396 18.0906 14.4988 19.4795 16.1754 19.4795Z" stroke="#5E227F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M27.1041 26.925V25.4452C27.103 24.0965 26.1043 22.919 24.6755 22.5818" stroke="#5E227F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M21.6396 13.275C23.0687 13.6015 24.0682 14.7506 24.0682 16.067C24.0682 17.3835 23.0687 18.5326 21.6396 18.8591" stroke="#5E227F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M19.104 38.625C29.5974 38.625 38.104 30.1128 38.104 19.6125C38.104 9.11219 29.5974 0.600006 19.104 0.600006C8.61059 0.600006 0.104004 9.11219 0.104004 19.6125C0.104004 30.1128 8.61059 38.625 19.104 38.625Z" fill="#E8DFEC"/>
+          <path d="M22.2469 26.925V25.4773C22.2469 23.8782 20.8877 22.5818 19.2111 22.5818H13.1397C11.4631 22.5818 10.104 23.8782 10.104 25.4773V26.925" stroke="#5E227F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1754 19.4795C17.8519 19.4795 19.2111 18.0906 19.2111 16.3773C19.2111 14.6639 17.8519 13.275 16.1754 13.275C14.4988 13.275 13.1396 14.6639 13.1396 16.3773C13.1396 18.0906 14.4988 19.4795 16.1754 19.4795Z" stroke="#5E227F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M27.1041 26.925V25.4452C27.103 24.0965 26.1043 22.919 24.6755 22.5818" stroke="#5E227F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21.6396 13.275C23.0687 13.6015 24.0682 14.7506 24.0682 16.067C24.0682 17.3835 23.0687 18.5326 21.6396 18.8591" stroke="#5E227F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <div class="text">
           <h4>92.65k</h4>
