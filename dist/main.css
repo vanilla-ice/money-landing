@@ -80,6 +80,9 @@ ul {
 .navigation__item:hover::before {
   opacity: 1; }
 
+.navigation__item.active::before {
+  opacity: 1; }
+
 .main-menu {
   display: flex; }
 
@@ -201,15 +204,16 @@ ul {
   padding: 50px 75px; }
 
 .section__footer {
-  display: grid;
-  grid-template-columns: 451px 511px 235px; }
+  display: flex;
+  flex-flow: row nowrap; }
 
 .section__green {
   background: #64BAAA;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
-  padding: 10px; }
+  padding: 10px;
+  flex: 1 1 auto; }
 
 .card1 {
   display: flex;
@@ -246,7 +250,8 @@ ul {
 .section__yellow {
   background: #F8D552;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  flex: 1 1 auto; }
 
 .yellow__container {
   display: flex;
@@ -264,3 +269,6 @@ ul {
     font-weight: bold;
     color: #ffffff;
     padding-bottom: 15px; }
+
+.section__progress {
+  flex: 2 1 auto; }

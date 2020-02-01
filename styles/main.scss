@@ -102,6 +102,12 @@ ul {
       opacity: 1;
     }
   }
+
+  &.active {
+    &::before {
+      opacity: 1;
+    }
+  }
 }
 
 .main-menu {
@@ -251,8 +257,8 @@ ul {
 
 }
 .section__footer {
-  display: grid;
-  grid-template-columns: 451px 511px 235px;
+  display: flex;
+  flex-flow: row nowrap;
 }
 .section__green {
   background: #64BAAA;
@@ -260,6 +266,7 @@ ul {
   flex-flow: row nowrap;
   justify-content: flex-end;
   padding: 10px;
+  flex: 1 1 auto;
 
 }
 .card1 {
@@ -309,6 +316,7 @@ ul {
   background: #F8D552;
   flex-direction: column;
   justify-content: center;
+  flex: 1 1 auto;
 }
 
 .yellow__container {
@@ -333,4 +341,8 @@ ul {
     padding-bottom: 15px;
   }
 
+}
+
+.section__progress {
+  flex: 2 1 auto;
 }
