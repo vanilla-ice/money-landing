@@ -192,6 +192,7 @@ ul {
 }
 .slider__icon {
   padding-top: 60px;
+  cursor: pointer;
 }
 
 .slider__right {
@@ -236,6 +237,8 @@ ul {
 .button2 {
   padding-top:30px;
   z-index: 6;
+
+  cursor: pointer;
 }
 
 .button__start {
@@ -247,6 +250,8 @@ ul {
   background: #ffffff;
   border-radius: 8px;
   margin-bottom: 72px;
+
+  cursor: pointer;
 
   p {
   margin: 0 auto;
