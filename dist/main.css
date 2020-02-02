@@ -14,7 +14,9 @@ li {
 .container {
   margin: 0 auto;
   max-width: 1440px;
-  padding: 0 70px; }
+  min-width: 1200px;
+  padding: 0 70px;
+  font-family: sans-serif; }
 
 * {
   box-sizing: border-box; }
@@ -59,7 +61,7 @@ ul {
   .navigation__item {
     display: block;
     padding-bottom: 25px;
-    font-family: HelveticaNeue;
+    font-family: sans-serif;
     margin-right: 50px;
     font-size: 24px;
     line-height: 28px;
@@ -98,12 +100,22 @@ ul {
 
 .slider {
   position: relative; }
+  .slider__controlButtons {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 70px; }
 
 .slider__container {
   margin: 0 auto;
   position: relative;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-bottom: 150px; }
 
 .slider__backgroundWrapper {
   display: flex;
@@ -147,7 +159,6 @@ ul {
     font-size: 18px; }
 
 .slider__icon {
-  padding-top: 60px;
   cursor: pointer; }
 
 .slider__right {
@@ -183,7 +194,6 @@ ul {
   z-index: 6; }
 
 .button2 {
-  padding-top: 30px;
   z-index: 6;
   cursor: pointer; }
 

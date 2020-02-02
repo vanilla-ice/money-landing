@@ -1,3 +1,5 @@
+$layoutPadding: 70px;
+
 body {
   display: block;
   min-height: 100vh;
@@ -15,7 +17,9 @@ li {
 .container {
   margin: 0 auto;
   max-width: 1440px;
+  min-width: 1200px;
   padding: 0 70px;
+  font-family: sans-serif;
 }
 
 * {
@@ -74,7 +78,7 @@ ul {
   &__item {
     display: block;
     padding-bottom: 25px;
-    font-family: HelveticaNeue;
+    font-family: sans-serif;
     margin-right:50px;
     font-size: 24px;
     line-height: 28px;
@@ -130,6 +134,17 @@ ul {
 
 .slider {
   position: relative;
+
+  &__controlButtons {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 $layoutPadding;
+  }
 }
 
 .slider__container {
@@ -137,6 +152,7 @@ ul {
   position: relative;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 150px;
 }
 
 .slider__backgroundWrapper {
@@ -191,7 +207,6 @@ ul {
     }
 }
 .slider__icon {
-  padding-top: 60px;
   cursor: pointer;
 }
 
@@ -235,7 +250,6 @@ ul {
 }
 
 .button2 {
-  padding-top:30px;
   z-index: 6;
 
   cursor: pointer;
