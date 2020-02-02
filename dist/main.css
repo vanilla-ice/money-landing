@@ -103,7 +103,8 @@ ul {
   color: #8F8F8F; }
 
 .slider {
-  position: relative; }
+  position: relative;
+  min-height: calc(100vh - 316px); }
   .slider__controlButtons {
     position: absolute;
     width: 100%;
@@ -224,8 +225,7 @@ ul {
 
 .section__footer {
   display: flex;
-  flex-flow: row nowrap;
-  max-height: 178px; }
+  flex-flow: row nowrap; }
 
 .section__green {
   background: #64BAAA;

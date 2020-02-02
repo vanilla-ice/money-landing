@@ -137,6 +137,7 @@ ul {
 
 .slider {
   position: relative;
+  min-height: calc(100vh - 316px);
 
   &__controlButtons {
     position: absolute;
@@ -181,15 +182,12 @@ ul {
 .slider__left {
   display: flex;
   flex-direction: column;
-  
   z-index: 5;
 }
 
 .slider__title {
-  
   font-size:48px;
   margin-top: 15px;
-  
 }
 
 .slider__title__1 {
@@ -286,7 +284,6 @@ ul {
 .section__footer {
   display: flex;
   flex-flow: row nowrap;
-  max-height: 178px;
 }
 
 .section__green {
