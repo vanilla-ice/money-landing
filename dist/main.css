@@ -234,6 +234,7 @@ ul {
   justify-content: flex-end;
   flex: 1 1 auto;
   padding-top: 12px;
+  padding-bottom: 12px;
   padding-right: 12px; }
 
 .card1 {
