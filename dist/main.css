@@ -263,11 +263,13 @@ ul {
 
 .text__head {
   font-size: 24px;
-  color: #2C2C2C; }
+  color: #2C2C2C;
+  font-family: sans-serif; }
 
 .text__p {
   font-size: 12px;
-  color: #2C2C2C; }
+  color: #2C2C2C;
+  font-family: sans-serif; }
 
 .section__yellow {
   background: #F8D552;
@@ -283,10 +285,12 @@ ul {
   margin: auto; }
   .yellow__1 h1 {
     font-size: 40px;
+    font-family: sans-serif;
     color: #ffffff;
     text-align: center; }
   .yellow__1 p {
     font-size: 32px;
+    font-family: sans-serif;
     font-weight: bold;
     color: #ffffff; }
 
@@ -304,11 +308,13 @@ ul {
 
 .progress__title__left {
   font-size: 18px;
+  font-family: sans-serif;
   font-weight: 700;
   font-family: sans-serif; }
 
 .progress__subtitle__left {
   font-size: 18px;
+  font-family: sans-serif;
   font-family: sans-serif;
   padding-top: 14px; }
 
@@ -325,6 +331,7 @@ ul {
 
 .progress__subtitle__right {
   font-size: 14px;
+  font-family: sans-serif;
   font-weight: 700;
   color: #BAC4CD; }
 
