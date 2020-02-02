@@ -369,17 +369,13 @@ ul {
 .section__progress__container {
   display: flex;
   justify-content: space-between;
-  
-
 }
 .progress__title {
-  
   font-size: 18px;
   font-weight: 700;
   font-family: sans-serif;
 }
 .progress__subtitle__left {
-  
   font-size: 18px;
   font-family: sans-serif;
   
@@ -390,17 +386,12 @@ ul {
   color: #BAC4CD;
 }
 .progress__title__text {
-  
   font-size: 14px;
   color: #606060;
 }
-
-
-
 .progress__line {
   max-width: 420px;
   position: relative;
-  
 }
 .line__violet {
   position: absolute;
@@ -410,7 +401,6 @@ ul {
   width: 73%;
   z-index:6;
 }
-
 .line__white {
   position: absolute;
   background: #F2F0FD;
