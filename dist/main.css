@@ -169,9 +169,9 @@ ul {
 .slider__right {
   display: flex; }
 
-.car {
-  width: 739px;
-  height: 248px;
+.picture__center {
+  max-width: 739px;
+  max-height: 248px;
   display: block;
   margin: 0 auto;
   position: absolute;
