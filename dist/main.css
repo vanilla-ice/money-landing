@@ -259,7 +259,8 @@ ul {
   display: flex;
   flex-direction: column;
   padding-top: 16px;
-  padding-right: 62px; }
+  padding-right: 62px;
+  padding-left: 15px; }
 
 .text__head {
   font-size: 24px;
