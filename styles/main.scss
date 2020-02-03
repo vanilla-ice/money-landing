@@ -232,6 +232,10 @@ ul {
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
+
+  &_home {
+    top:45%;
+  }
 }
 .slider__right {
   display: flex;
