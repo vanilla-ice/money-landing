@@ -559,7 +559,6 @@ ul {
   
   #checkbox-menu:checked + label .touch li{
     opacity: 1;
-    pointer-events: none;
     visibility: visible;
     transition: all .7s linear;
   }
