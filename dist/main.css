@@ -88,6 +88,10 @@ ul {
 .navigation__item.active::before {
   opacity: 1; }
 
+#checkbox-menu,
+.toggle {
+  display: none; }
+
 .main-menu {
   display: flex; }
 
@@ -255,6 +259,9 @@ ul {
   padding-top: 15px;
   padding-left: 19px; }
 
+.bottom__card {
+  overflow: hidden; }
+
 .text {
   display: flex;
   flex-direction: column;
@@ -361,7 +368,7 @@ ul {
   width: 100%;
   z-index: 5; }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .container {
     padding: 0 20px; }
   .slider__bgRight {
@@ -420,4 +427,35 @@ ul {
     border-radius: 8px;
     color: white; }
   .progress__line {
-    padding-bottom: 30px; } }
+    padding-bottom: 30px; }
+  .toggle {
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    width: 100%;
+    color: #2C2C2C;
+    background: #F2F0FD;
+    transition: all .1s linear; }
+  .toggle:hover {
+    background: #F2F0FD; }
+  #checkbox-menu:checked + label .touch li {
+    opacity: 1;
+    visibility: visible;
+    transition: all .7s linear; }
+  #checkbox-menu:checked + label .touch {
+    height: 450px; }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 0;
+    transition: height .3s linear; }
+  .menu li {
+    visibility: hidden;
+    display: flex;
+    align-self: center;
+    width: 95%;
+    opacity: 0; } }
