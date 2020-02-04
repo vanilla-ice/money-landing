@@ -551,7 +551,7 @@ ul {
   .toggle {
     display: block;
     text-align:center;
-    width: 50px;
+    width: 30px;
     height: 50px;
     transition: transform 100ms linear;
     margin-bottom: 20px;
@@ -586,19 +586,24 @@ ul {
       width: 100%;
       opacity: 0;
     }
+    ul {
+      padding-inline-start: 0px;
+    }
   }
   .navigation {
     display: flex;
+    
   
     &__item {
       display: block;
-      padding: 0px;
       font-family: sans-serif;
-      margin:0px;
+      margin:0 auto;
       font-size: 14px;
       line-height: 28px;
       color: black;
       position: relative;
+      
     }
   }
+  
 }
