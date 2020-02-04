@@ -430,8 +430,7 @@ ul {
   .progress__line {
     padding-bottom: 30px; }
   .header__container {
-    display: flex;
-    justify-content: space-between; }
+    display: flex; }
   .toggle {
     display: block;
     text-align: center;
@@ -460,4 +459,15 @@ ul {
       display: flex;
       align-self: center;
       width: 100%;
-      opacity: 0; } }
+      opacity: 0; }
+  .navigation {
+    display: flex; }
+    .navigation__item {
+      display: block;
+      padding: 0px;
+      font-family: sans-serif;
+      margin: 0px;
+      font-size: 14px;
+      line-height: 28px;
+      color: black;
+      position: relative; } }

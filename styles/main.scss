@@ -545,7 +545,7 @@ ul {
   
   .header__container {
     display: flex;
-    justify-content: space-between;
+
   }
   
   .toggle {
@@ -555,6 +555,7 @@ ul {
     height: 50px;
     transition: transform 100ms linear;
     margin-bottom: 20px;
+    
   }
   
   #checkbox-menu:checked + label .touch li{
@@ -584,6 +585,20 @@ ul {
       align-self: center;
       width: 100%;
       opacity: 0;
+    }
+  }
+  .navigation {
+    display: flex;
+  
+    &__item {
+      display: block;
+      padding: 0px;
+      font-family: sans-serif;
+      margin:0px;
+      font-size: 14px;
+      line-height: 28px;
+      color: black;
+      position: relative;
     }
   }
 }
