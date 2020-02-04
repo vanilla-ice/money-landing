@@ -73,6 +73,12 @@ header {
 ul {
   display: flex;
   align-items: stretch;
+  list-style-type: disc;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
 }
 
 .navigation {
@@ -218,6 +224,14 @@ ul {
 
 .slider__icon {
   cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+.button2 {
+  z-index: 6;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
 }
 
 .slider__right {
@@ -259,11 +273,6 @@ ul {
   max-width: 396px;
   max-height: 295px;
   z-index: 6;
-}
-
-.button2 {
-  z-index: 6;
-  cursor: pointer;
 }
 
 .start__button {
@@ -555,6 +564,7 @@ ul {
     height: 50px;
     transition: transform 100ms linear;
     margin-bottom: 20px;
+    margin-left: 70px;
     
   }
   
@@ -573,7 +583,7 @@ ul {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 0;
+    height: 0px;
     -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
     transition: transform 100ms linear;
@@ -586,24 +596,43 @@ ul {
       width: 100%;
       opacity: 0;
     }
-    ul {
-      padding-inline-start: 0px;
-    }
+    
   }
+
   .navigation {
     display: flex;
-    
-  
     &__item {
       display: block;
       font-family: sans-serif;
-      margin:0 auto;
+      margin-right: 0px;
       font-size: 14px;
       line-height: 28px;
       color: black;
       position: relative;
-      
     }
   }
-  
+
+  label {
+    padding: 0px;
+    margin: 0px;
+    padding-inline-start: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .slider__controlButtons {
+    padding: 0 20px;
+  }
+
+  .slider__icon {
+    max-width: 70px;
+    max-height: 70px;
+  }
+
+  .button2 {
+    max-width: 70px;
+    max-height: 70px;
+  }
 }
