@@ -16,7 +16,6 @@ a {
 li {
   display: flex;
   list-style: none;
-  flex: row;
 }
 
 .container {
@@ -571,7 +570,7 @@ ul {
   #checkbox-menu:checked + label .touch li{
     opacity: 1;
     visibility: visible;
-    transition: all .7s linear;
+    transition: .7s linear;
   }
 
   #checkbox-menu:checked + label .touch {
@@ -581,18 +580,19 @@ ul {
   .menu {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
     height: 0px;
-    -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+    -webkit-transform: translateX(-92%);
+          transform: translateX(-92%) ;
     transition: transform 100ms linear;
     will-change: transform;
 
     li {
+      padding-bottom: 10px;
       visibility: hidden;
       display: flex;
       align-self: center;
+      justify-content: center;
       width: 100%;
       opacity: 0;
     }
@@ -601,8 +601,10 @@ ul {
 
   .navigation {
     display: flex;
+    
     &__item {
       display: block;
+      align-items: center;
       font-family: sans-serif;
       margin-right: 0px;
       padding-bottom: 5px;
