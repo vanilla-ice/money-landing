@@ -1,3 +1,3 @@
-# money-landing
+# Lopper
 
-clone project -> cd money-landing -> yarn -> yarn dev
+clone project -> cd Lopper -> yarn -> yarn dev
