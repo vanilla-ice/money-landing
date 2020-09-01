@@ -1,233 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./normalize.css">
-  <link rel="stylesheet" href="./dist/main.css">
+  <link rel="stylesheet" href="./styles/main.css">
+
   <title>Money on sight</title>
 </head>
+
 <body>
   <header class="header">
     <div class="header__container container">
-        <div class="left">
-            
+      <div class="left">
+        <div class="logo">
+          Lopper
         </div>
-        <nav class="navigation">
-          <input type="checkbox" id="checkbox-menu">
-          <label for="checkbox-menu">
-            <ul class="menu touch">
-              <li><a class="navigation__item active" href="./index.html">Car</a></li>
-              <li><a class="navigation__item" href="./home.html">Home</a></li>
-              <li><a class="navigation__item" href="./finance.html">Finance</a></li>
-              <li><a class="navigation__item" href="./health.html">Health</a></li>
-              <li><a class="navigation__item" href="./retirement.html">Retirement</a></li>
-              <li><a class="navigation__item" href="./vacation.html">Vacation</a></li>
-            </ul>
-            <div class="toggle"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 32 40" style="enable-background:new 0 0 32 32;" xml:space="preserve"><g><g><path d="M24,6H8C7.4,6,7,5.6,7,5s0.4-1,1-1h16c0.6,0,1,0.4,1,1S24.6,6,24,6z"/></g><g><path d="M24,17H8c-0.6,0-1-0.4-1-1s0.4-1,1-1h16c0.6,0,1,0.4,1,1S24.6,17,24,17z"/></g><g><path d="M24,28H8c-0.6,0-1-0.4-1-1s0.4-1,1-1h16c0.6,0,1,0.4,1,1S24.6,28,24,28z"/></g></g><text x="0" y="47" fill="#000000" font-size="2px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"></text><text x="0" y="52" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"></text></svg></div>
-          </label>
-        </nav>
+      </div>
+      <nav class="navigation">
+        <input type="checkbox" id="checkbox-menu">
+        <label for="checkbox-menu">
+          <ul class="menu touch">
+            <li><a class="navigation__item active" href="./index.html">Home</a></li>
+            <li><a class="navigation__item" href="./home.html">Services</a></li>
+            <li><a class="navigation__item" href="./finance.html">Work</a></li>
+            <li><a class="navigation__item" href="./health.html">About</a></li>
+          </ul>
+        </label>
+      </nav>
+      <div class="mobile">
+        <div class="icon"><svg width="18" height="29" viewBox="0 0 18 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.6 5.4V18.9H5.4V5.4H12.6ZM15.3 0H2.7C1.20938 0 0 1.20938 0 2.7V26.1C0 27.5906 1.20938 28.8 2.7 28.8H15.3C16.7906 28.8 18 27.5906 18 26.1V2.7C18 1.20938 16.7906 0 15.3 0ZM2.7 27C2.205 27 1.8 26.595 1.8 26.1V2.7C1.8 2.205 2.205 1.8 2.7 1.8H15.3C15.795 1.8 16.2 2.205 16.2 2.7V26.1C16.2 26.595 15.795 27 15.3 27H2.7ZM13.725 3.6H4.275C3.90375 3.6 3.6 3.90375 3.6 4.275V20.025C3.6 20.3963 3.90375 20.7 4.275 20.7H13.725C14.0962 20.7 14.4 20.3963 14.4 20.025V4.275C14.4 3.90375 14.0962 3.6 13.725 3.6ZM11.025 23.4H6.975C6.60375 23.4 6.3 23.7038 6.3 24.075V24.525C6.3 24.8963 6.60375 25.2 6.975 25.2H11.025C11.3962 25.2 11.7 24.8963 11.7 24.525V24.075C11.7 23.7038 11.3962 23.4 11.025 23.4Z" fill="#30233D"/>
+          </svg>
+        </div>
+        <div class="number">
+          (01) 666 - 693 - 456
+        </div>
+      </div>
+      <div class="toggle">
+        <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="27" height="2" fill="#30233D"/>
+          <rect y="7" width="27" height="2" fill="#30233D"/>
+          <rect x="9" y="14" width="18" height="2" fill="#30233D"/>
+          </svg>          
+      </div>
+      
     </div>
-</header>
+  </header>
 
-<div class="slider">
-  <div class="slider__backgroundWrapper">
-    <div class="slider__bgLeft"></div>
-    <div class="slider__bgRight"></div>
-  </div>
-  <div class="slider__container container">
-    <div class="slider__controlButtons">
-      <div class="slider__icon">
-        <a href="./vacation.html" class="">
-          <svg viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_d)">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M54 100C81.6142 100 104 77.6142 104 50C104 22.3858 81.6142 0 54 0C26.3858 0 4 22.3858 4 50C4 77.6142 26.3858 100 54 100Z"
-                fill="#D5D5D5" fill-opacity="0.499863" />
-            </g>
-            <path
-              d="M38.5254 49.433L66.9495 25.4415C67.6468 24.8528 68.7796 24.8528 69.477 25.4415C70.1743 26.0301 70.1743 26.9862 69.477 27.5748L42.3151 50.4983L69.477 73.4245C70.1743 74.0131 70.1743 74.9693 69.477 75.5579C69.1267 75.8535 68.6724 76 68.2148 76C67.7573 76 67.2997 75.8535 66.9526 75.5579L38.5254 51.5637C37.8249 50.9751 37.8249 50.0216 38.5254 49.433Z"
-              fill="black" />
-            <defs>
-              <filter id="filter0_d" x="0" y="0" width="108" height="108" filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset dy="4" />
-                <feGaussianBlur stdDeviation="2" />
-                <feColorMatrix type="matrix" values="0 0 0 0 0.641304 0 0 0 0 0.641304 0 0 0 0 0.641304 0 0 0 0.34233 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-              </filter>
-            </defs>
-          </svg>
-        </a>
-      </div>
-      <div class="button2">
-        <a href="./home.html" class="">
-          <svg viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_d)">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M54 100C81.6142 100 104 77.6142 104 50C104 22.3858 81.6142 0 54 0C26.3858 0 4 22.3858 4 50C4 77.6142 26.3858 100 54 100Z"
-                fill="#D5D5D5" fill-opacity="0.499863" />
-            </g>
-            <path
-              d="M69.4746 49.433L41.0505 25.4415C40.3532 24.8528 39.2204 24.8528 38.523 25.4415C37.8257 26.0301 37.8257 26.9862 38.523 27.5748L65.6849 50.4983L38.523 73.4245C37.8257 74.0131 37.8257 74.9693 38.523 75.5579C38.8733 75.8535 39.3276 76 39.7852 76C40.2427 76 40.7003 75.8535 41.0474 75.5579L69.4746 51.5637C70.1751 50.9751 70.1751 50.0216 69.4746 49.433Z"
-              fill="black" />
-            <defs>
-              <filter id="filter0_d" x="0" y="0" width="108" height="108" filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-                <feOffset dy="4" />
-                <feGaussianBlur stdDeviation="2" />
-                <feColorMatrix type="matrix" values="0 0 0 0 0.641304 0 0 0 0 0.641304 0 0 0 0 0.641304 0 0 0 0.34233 0" />
-                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
-                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
-              </filter>
-            </defs>
-          </svg>
-        </a>
-      </div>
-    </div>
-    <div class="slider__left">
-      <div class="slider__title">
-        <div class="slider__title__1">01/<span class='grey'>06</span></div>
-        <div class="slider__title__2">Done!<br>Your progress bar </div>
-      </div>
-      <div class="slider__subtitle">The Finance Company.</div>
-      <div class="slider__text">
-        <div>Your credit score for free.<br><br>
-          The Finance Company
-          deliviry personalized insihts
-          And updates your info weekly
-          So your can see your progress
+  <div class="wrapper">
+    <div class="ourteam__background">
+      <div class="ourteam container">
+        <div class="ourteam__title">
+          Our team
         </div>
+        <div class="ourteam__subtitle">
+          we build great business
+        </div>
+       </div>
+    </div>
+    <div class="ourteam__block container">
+      <div class="ourteam__block_title">
+        we are
+      </div>
+      <div class="ourteam__block_subtitle">
+        Our team
+      </div>
+      <div class="ourteam__block_description">
+        Upper prior hundred links approach reedy, was to the than and the ever somehow surprised known for every by of there until road
       </div>
     </div>
-    <div class="picture__center">
-      <svg width="739" height="284" viewBox="0 0 739 284" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M727.314 101.16L736.363 142.574C738.499 156.42 739.355 168.532 738.866 179.063C732.491 189.31 722.26 201.904 707.44 209.603C705.462 210.643 700.475 211.71 692.909 212.834C687.75 184.215 667.987 160.619 641.517 149.945C631.701 145.975 620.967 143.798 609.717 143.798C563.528 143.798 525.996 180.543 525.193 226.24C503.066 227.549 479.822 228.874 455.946 230.154C455.201 230.197 454.456 230.236 453.711 230.275C452.966 230.314 452.22 230.353 451.475 230.396C381.998 234.124 307.592 237.611 240.824 240.486H240.81C231.681 240.856 222.681 241.241 213.853 241.624C214.384 237.953 214.642 234.167 214.642 230.339C214.642 185.41 177.968 148.992 132.74 148.992C87.4977 148.992 50.8246 185.41 50.8246 230.339C50.8246 236.259 51.4695 242.023 52.6727 247.588C38.1266 247.972 29.4566 248.114 28.2672 247.901C22.85 246.933 14.2233 242.848 6.95715 238.949C0.952179 227.479 -2.5582 214.258 2.25655 209.96L8.01777 204.822C8.01777 204.822 3.28862 174.224 2.35682 170.154C-3.86256 142.616 112.376 109.186 152.918 100.078C181.107 93.7315 213.982 88.1244 254.267 83.1715H254.28C302.39 47.9625 377.914 4.9979 464.057 0.657806C612.197 -6.78537 738.94 51.3927 738.94 51.3927H738.956L734.782 69.1821L702.338 87.1278C700.833 87.9673 699.931 89.5331 699.931 91.2121C699.931 91.3262 699.931 91.4396 699.945 91.5683C700.145 94.0156 702.209 95.8946 704.674 95.8663L728.635 95.5676L727.314 101.16ZM14.2233 175.904C14.2233 175.904 55.0516 167.109 62.3324 163.92C69.5977 160.747 71.6187 138.361 71.6187 138.361C55.3817 142.004 8.86316 155.382 11.3423 166.411C11.7148 168.034 12.9042 175.761 12.9042 175.761L14.2233 175.904ZM501.432 120.088L472.355 122.692L437.23 125.837C435.883 125.965 434.694 124.983 434.579 123.646L434.536 123.162C434.407 121.838 435.396 120.657 436.742 120.529L471.767 117.398L500.96 114.779C502.293 114.666 503.482 115.647 503.611 116.986L503.654 117.455C503.769 118.792 502.78 119.974 501.432 120.088ZM644.054 70.0216C660.047 65.2112 674.894 59.8607 687.879 54.7224C690.057 53.8691 692.177 53.015 694.241 52.1755C674.336 43.722 576.713 5.11205 464.631 10.7337C398.522 14.0497 320.863 50.7669 267.265 81.6203H267.251C248.305 92.5212 232.369 102.683 221.004 110.396C219.8 111.208 220.431 113.072 221.878 112.986C336.684 106.383 604.042 82.0615 644.054 70.0216Z" fill="#F8B500"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M693.43 48.1492C691.369 48.9926 689.25 49.8497 687.075 50.7061C674.108 55.8621 659.279 61.2326 643.305 66.0603C624.541 71.7306 555.752 80.1283 476.171 88.1125C477.728 92.4561 480.242 100.78 481.787 112.663L500.388 110.987C501.719 110.872 502.907 111.858 503.036 113.2L503.079 113.672C503.194 115.014 502.206 116.2 500.86 116.314L482.385 117.977C484.718 142.454 482.567 179.545 462.759 226.368L461.171 226.454C481.141 179.557 483.295 142.48 480.964 118.105L471.819 118.928L436.738 122.085C435.392 122.213 434.205 121.227 434.09 119.885L434.047 119.399C433.918 118.071 434.906 116.886 436.251 116.757L471.232 113.615L480.364 112.792C478.789 100.744 476.212 92.4211 474.696 88.2694C385.096 97.2391 282.156 105.68 221.654 109.179C220.209 109.265 219.579 107.393 220.781 106.58C232.132 98.8389 248.048 88.6407 266.969 77.7007H266.984C320.515 46.7363 398.079 9.88724 464.105 6.55852C576.048 0.91749 673.549 39.6662 693.43 48.1492ZM733.921 65.2234L727.782 91.7029L703.85 92.0027C701.389 92.0311 699.328 90.1462 699.127 87.6892C699.113 87.5609 699.113 87.4471 699.113 87.3326C699.113 85.6467 700.014 84.0762 701.517 83.2328L733.921 65.2234ZM62.3073 160.3C69.5636 157.115 71.582 134.649 71.582 134.649C55.3653 138.306 8.90445 151.731 11.3805 162.8C11.7526 164.429 12.9405 172.184 12.9405 172.184L14.2579 172.327C14.2579 172.327 55.0355 163.5 62.3073 160.3ZM667.639 236.025C677.1 235.511 685.559 234.368 693.03 232.569C722.229 225.485 736.469 207.931 738 175.495C731.633 185.779 721.414 198.419 706.613 206.145C704.638 207.188 699.657 208.259 692.099 209.388C686.947 180.666 667.21 156.985 640.773 146.273C630.968 142.289 620.248 140.103 609.012 140.103C562.881 140.103 525.394 176.98 524.593 222.842C504.769 224.027 484.029 225.211 462.759 226.368L461.171 226.454C460.258 226.502 459.342 226.555 458.424 226.606L458.417 226.607C457.423 226.662 456.428 226.718 455.432 226.769C454.678 226.813 453.925 226.853 453.171 226.893C452.747 226.915 452.322 226.937 451.898 226.96C451.588 226.977 451.277 226.994 450.966 227.012C381.576 230.754 307.262 234.254 240.577 237.139H240.563C231.445 237.51 222.456 237.896 213.639 238.281C214.169 234.597 214.426 230.797 214.426 226.955C214.426 181.865 177.799 145.316 132.627 145.316C87.4405 145.316 50.813 181.865 50.813 226.955C50.813 232.897 51.457 238.682 52.6596 244.266C38.1316 244.652 29.4724 244.794 28.2844 244.58C22.874 243.609 14.2571 239.51 7 235.597C12.3681 245.88 19.6961 254.735 24.9201 254.549L55.3074 253.692L80.1394 252.963C90.3163 271.459 109.983 284 132.626 284C156.472 284 177.069 270.06 186.673 249.908L211.364 249.193L526.067 240.124L551.129 239.41H551.143C557.828 265.061 581.187 284 609.011 284C638.01 284 662.199 263.39 667.639 236.025ZM29.1345 212.771C28.2787 208.501 11.2901 212.771 11.2901 212.771L20.2497 217.68V237.15C20.2497 238.068 20.9956 238.812 21.9156 238.812C22.6476 238.812 23.2908 238.347 23.505 237.648C24.9046 233.078 29.8705 216.444 29.1345 212.771Z" fill="#5E227F"/>
-      </svg>        
-    </div>
-    <div class="slider__right">
-      <div class="slider__right__container">
-        <div class="yellow__button">
-          <div class="text__button">
-            <p>We believe that if you stand 
-              for nothing, you'll fall for<br>
-              anything. Strong ideals make 
-              <br>string businesses.</p>
-          </div>
-          <div class="start__button">
-            <p>Start Chat Bot </p>
-          </div>
+    <div class="team">
+      <div class="team__item_container container">
+        <div class="team__item">
+          <div class="item__img"><img src="./img/team1.svg"></div>
+          <div class="item__title">Kerry Lorem</div>
+          <div class="item__subtitle">designer</div>
+          <div class="item__icons"></div>
+        </div>
+        <div class="team__item">
+          <div class="item__img"><img src="./img/team1.svg"></div>
+          <div class="item__title">Kerry Lorem</div>
+          <div class="item__subtitle">designer</div>
+          <div class="item__icons"></div>
+        </div>
+        <div class="team__item">
+          <div class="item__img"><img src="./img/team1.svg"></div>
+          <div class="item__title">Kerry Lorem</div>
+          <div class="item__subtitle">designer</div>
+          <div class="item__icons"></div>
+        </div>
+        <div class="team__item">
+          <div class="item__img"><img src="./img/team1.svg"></div>
+          <div class="item__title">Kerry Lorem</div>
+          <div class="item__subtitle">designer</div>
+          <div class="item__icons"></div>
+        </div>
+        <div class="team__item">
+          <div class="item__img"><img src="./img/team1.svg"></div>
+          <div class="item__title">Kerry Lorem</div>
+          <div class="item__subtitle">designer</div>
+          <div class="item__icons"></div>
+        </div>
+        <div class="team__item">
+          <div class="item__img"><img src="./img/team1.svg"></div>
+          <div class="item__title">Kerry Lorem</div>
+          <div class="item__subtitle">designer</div>
+          <div class="item__icons"></div>
         </div>
       </div>
     </div>
   </div>
-</div>
-</div>
-
-<div class="section__footer">
-  <div class="section__green">
-    <div class="card1">
-      <div class="top__card"> 
-        <div class="top__card__icon">
-          <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M19.104 38.625C29.5974 38.625 38.104 30.1128 38.104 19.6125C38.104 9.11219 29.5974 0.600006 19.104 0.600006C8.61059 0.600006 0.104004 9.11219 0.104004 19.6125C0.104004 30.1128 8.61059 38.625 19.104 38.625Z" fill="#E8DFEC"/>
-          <path d="M22.2469 26.925V25.4773C22.2469 23.8782 20.8877 22.5818 19.2111 22.5818H13.1397C11.4631 22.5818 10.104 23.8782 10.104 25.4773V26.925" stroke="#5E227F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1754 19.4795C17.8519 19.4795 19.2111 18.0906 19.2111 16.3773C19.2111 14.6639 17.8519 13.275 16.1754 13.275C14.4988 13.275 13.1396 14.6639 13.1396 16.3773C13.1396 18.0906 14.4988 19.4795 16.1754 19.4795Z" stroke="#5E227F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M27.1041 26.925V25.4452C27.103 24.0965 26.1043 22.919 24.6755 22.5818" stroke="#5E227F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M21.6396 13.275C23.0687 13.6015 24.0682 14.7506 24.0682 16.067C24.0682 17.3835 23.0687 18.5326 21.6396 18.8591" stroke="#5E227F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-        <div class="text">
-          <div class="text__head">92.65k</div>
-          <div class="text__p">Health <br>progress</div>
-        </div>
-      </div>
-      <div class="bottom__card">
-        <svg viewBox="0 0 229 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.537094 36.1642C0.537094 36.1642 11.012 36.0517 24.3082 27.0732C37.6043 18.0947 66.8146 27.8199 72.767 27.8199C78.7195 27.8199 83.9432 27.4922 95.8661 18.5228C107.789 9.5534 113.91 6.17575 130.561 15.9905C147.212 25.8053 143.662 23.8639 143.662 23.8639C143.662 23.8639 153.944 27.4797 163.175 20.5854C172.406 13.6912 175.78 8.66473 175.78 8.66473C175.78 8.66473 183.866 -0.98297 199.518 2.0077C215.171 4.99836 227.929 6.52941 227.929 6.52941V39.5873C227.929 39.5873 229.012 52.3 223.405 52.3C217.799 52.3 10.9671 52.3 4.82092 52.3C-1.32528 52.3 0.537094 36.1642 0.537094 36.1642Z" fill="url(#paint0_linear)"/>
-          <path d="M0.537109 36.1642C0.537109 36.1642 11.9767 34.066 20.104 28.9193C28.2313 23.7727 36.0012 21.4061 44.7038 22.2982C53.4063 23.1902 64.5433 26.2067 67.4216 26.8C70.2999 27.3934 80.9474 29.0734 88.1822 23.6196C95.417 18.1658 101.26 13.8175 101.26 13.8175C101.26 13.8175 112.384 5.9862 125.192 12.149C138 18.3118 132.424 17.9265 141.789 22.2982C151.153 26.6699 157.775 24.4746 164.893 18.3118C172.011 12.149 179.007 5.58347 180.607 4.74836C182.208 3.91325 186.921 -0.501162 199.087 2.1236C211.252 4.74836 224.031 6.24598 228.104 6.24598" stroke="#5E227F" stroke-width="2"/>
-          <defs>
-          <linearGradient id="paint0_linear" x1="24.3624" y1="12.1524" x2="24.3624" y2="52.3" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#5E227F"/>
-          <stop offset="1" stop-color="white"/>
-          </linearGradient>
-          </defs>
-        </svg>
-      </div>
-    </div>
-    <div class="card1">
-      <div class="top__card">
-        <div class="top__card__icon">
-          <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M19 38C29.4934 38 38 29.4934 38 19C38 8.50659 29.4934 0 19 0C8.50659 0 0 8.50659 0 19C0 29.4934 8.50659 38 19 38Z" fill="#FBE9A5"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0139 23.1257C12.0139 22.0943 12.8134 21.2543 13.7918 21.2543C14.7729 21.2543 15.5697 22.0943 15.5697 23.1257C15.5697 24.16 14.7729 25 13.7918 25C12.8107 25 12.0139 24.16 12.0139 23.1257ZM12.556 23.1257C12.556 23.8457 13.1115 24.4286 13.7918 24.4286C14.4721 24.4286 15.0277 23.8429 15.0277 23.1257C15.0277 22.4086 14.4748 21.8257 13.7918 21.8257C13.1088 21.8257 12.556 22.4057 12.556 23.1257Z" fill="#5E227F"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.6324 21.2543C25.6135 21.2543 26.4103 22.0943 26.4103 23.1257C26.4103 24.16 25.6135 25 24.6324 25C23.6513 25 22.8545 24.16 22.8545 23.1257C22.8545 22.0943 23.6513 21.2543 24.6324 21.2543ZM24.6351 21.8257C23.9521 21.8257 23.3992 22.4086 23.3992 23.1257C23.3992 23.8457 23.9521 24.4286 24.6324 24.4286C25.3126 24.4286 25.8709 23.8429 25.8709 23.1257C25.8709 22.4086 25.3181 21.8257 24.6351 21.8257Z" fill="#5E227F"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M30.4757 18.7314L26.3833 17.5143L22.8817 13.1029C22.8302 13.0371 22.7543 13 22.6757 13H11.965C11.8593 13 11.7645 13.0657 11.7184 13.1657L9.76434 17.5829C9.20604 17.64 8 17.9314 8 18.6514V22.1429C8 22.9286 9.45538 23.2857 9.89714 23.2857H11.2522C11.3959 23.2857 11.5151 23.1657 11.5233 23.0143C11.5802 21.7343 12.5775 20.7314 13.7917 20.7314C15.0059 20.7314 16.0032 21.7343 16.0601 23.0143C16.0683 23.1657 16.1848 23.2857 16.3311 23.2857H16.5669H21.7759H22.093C22.2367 23.2857 22.3559 23.1657 22.364 23.0143C22.421 21.7343 23.4183 20.7314 24.6325 20.7314C25.8467 20.7314 26.844 21.7343 26.9009 23.0143C26.9091 23.1657 27.0256 23.2857 27.1719 23.2857H30.2318C30.931 23.2857 30.9852 21.1029 30.9852 20.4343C30.9852 20.1371 30.9716 19.7171 30.912 19.38L30.9097 19.3682C30.878 19.2062 30.7928 18.7704 30.4757 18.7314ZM12.1358 13.5714H16.9518V17.5714H10.366L12.1358 13.5714ZM27.4186 22.7143H30.1559C30.4269 22.2543 30.5543 19.7486 30.3293 19.28L26.1556 18.04C26.1014 18.0257 26.0553 17.9914 26.0201 17.9486L22.5483 13.5714H17.4938V17.5714H23.1961C23.3451 17.5714 23.4671 17.7 23.4671 17.8571C23.4671 18.0143 23.3451 18.1429 23.1961 18.1429H10.1682C10.1275 18.1429 10.0896 18.1314 10.0543 18.1143C10.0191 18.1314 9.98386 18.1429 9.94321 18.1429C9.3551 18.1429 8.54204 18.4943 8.54204 18.6514V22.1429C8.54204 22.3286 9.37949 22.7143 9.89714 22.7143H11.0056C11.198 21.26 12.3743 20.16 13.7917 20.16C15.2091 20.16 16.3881 21.26 16.5778 22.7143H21.7759H21.8464C22.0388 21.26 23.2151 20.16 24.6325 20.16C26.0499 20.16 27.2289 21.26 27.4186 22.7143Z" fill="#F8B500"/>
-          </svg>
-        </div>
-        <div class="text">
-            <div class="text__head">92.65k</div>
-            <div class="text__p">Health <br>progress</div>
-        </div>
-      </div>
-      <div class="bottom__card">
-        <svg viewBox="0 0 230 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.999899 34.8642C0.999899 34.8642 12.9079 34.7517 26.204 25.7732C39.5002 16.7947 68.7105 26.5199 74.6629 26.5199C80.6154 26.5199 85.8391 26.1922 97.762 17.2228C106.283 10.8129 111.84 7.25873 120.395 9.33452C123.811 10.1634 127.705 11.8898 132.457 14.6905C149.107 24.5053 145.558 22.5639 145.558 22.5639C145.558 22.5639 155.84 26.1796 165.071 19.2854C174.302 12.3912 177.676 7.36473 177.676 7.36473C177.676 7.36473 185.762 -2.28297 201.414 0.707693C217.066 3.69836 229.825 5.2294 229.825 5.2294L229.757 41.6276C229.757 41.6276 230.84 54.3403 225.234 54.3403C219.628 54.3403 13.0067 54.3403 6.8605 54.3403C4.70499 54.3403 2.50719 52.4865 1.5383 48.8934C0.665395 45.6562 0.999899 34.8642 0.999899 34.8642Z" fill="url(#paint1_linear)"/>
-          <defs>
-          <linearGradient id="paint1_linear" x1="25.2747" y1="11.5632" x2="25.2747" y2="54.3403" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#f8d552"/>
-          <stop offset="1" stop-color="white"/>
-          </linearGradient>
-          </defs>
-          </svg>   
-     </div>
-    </div>
-  </div>
-  <div class="section__yellow">
-      <div class="yellow__container">
-        <div class="yellow__1">
-          <h1>$14k</h1>
-          <p>Total</p>
-        </div>
-        <div class="yellow__1">
-          <h1>14</h1>
-          <p>Operation</p>
-        </div>
-      </div>
-  </div>
-  <div class="section__progress">
-    <div class="section__progress__container">
-      <div class="progress__left">
-        <div class="progress__title__left">Retirement<br> progress</div>
-        <div class="progress__subtitle__left">73%</div>
-      </div>
-      <div class="progress__right">
-        <div class="progress__title__right">
-          <div class="progress__title__text">
-            800
-          </div>
-          <div class="progress__title__icon">
-            <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5.28789 10.459V1.16394" stroke="#28C76F" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M1.20483 6.32787L5.28781 1.16394L9.37078 6.32787" stroke="#28C76F" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-        </div>
-        <div class="progress__subtitle__right">13:16</div>
-      </div>
-    </div>
-    <div class="progress__line">
-      <div class="line__violet"></div>
-      <div class="line__white"></div>
-    </div>
-  </div>
-</div>
 </body>
+
 </html>
